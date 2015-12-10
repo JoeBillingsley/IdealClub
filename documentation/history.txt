@@ -1,7 +1,7 @@
 - Worked out the requirements
 	- Minimal cost
 	- Easy to update
-	- 
+	
 - Sketched out some rough ideas on paper. Realised I was awful at drawing, decided it was easier to just make a prototype.
 - Set up gulp.js with jekyll and browsersync
   - http://blog.webbb.be/use-jekyll-with-gulp/

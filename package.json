@@ -1,0 +1,23 @@
+{
+  "name": "IdealClub",
+  "version": "0.0.0",
+  "description": "The website of the band IdealClub",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "~3.9.0"
+  },
+  "devDependencies": {
+    "babel": "^6.3.13",
+    "gulp-gh-pages": "~0.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "band",
+    "website",
+    "idealclub"
+  ],
+  "author": "Joseph Billingsley",
+  "license": "BSD-2-Clause"
+}

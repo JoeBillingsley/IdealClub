@@ -1,2 +1,9 @@
-.sass-cache
+# Node
 node_modules
+
+# Build
+.build
+.publish
+
+#VS Code
+jsconfig.json

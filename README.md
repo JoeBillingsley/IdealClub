@@ -6,27 +6,27 @@ The website uses the gulp build tool so you'll first need to install Node.js and
 
 Next run the below instructions at a command line.
 
-/1. Install Gulp and babel dependancies
-'''
+\1. Install Gulp and babel dependancies
+```
 $ npm install gulp --global
 $ npm install babel --global
-'''
+```
 
-/2. Install build dependant packages
-'''
+\2. Install build dependant packages
+```
 $ npm install
-'''
 
-/3. Build the website and start a local server running
-'''
+```
+\3. Build the website and start a local server running
+```
 $ gulp
-'''
+```
 
-/4. Open a browser to localhost:4000
+\4. Open a browser to localhost:4000
 
 ## Publishing changes to live
 If you can succesfully run a clean install as above and the website looks as it should you can publish your changes with:
 
-'''
+```
 gulp publish
-''' 
+``` 

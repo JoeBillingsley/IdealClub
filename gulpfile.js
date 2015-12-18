@@ -135,7 +135,7 @@ gulp.task('watch', () => {
 });
 
 gulp.task('publish', ['default'], () => {
-  return gulp.src('./.build/*')
+  return gulp.src('./.build/**/*')
     .pipe($.ghPages({
       branch: 'gh-pages',
       message: argv.m

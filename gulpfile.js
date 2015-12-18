@@ -81,6 +81,8 @@ gulp.task('scripts', ['lint'], () => {
     .pipe(gulp.dest(dest.scripts));
 });
 
+// TODO: Add UnCSS back in
+
 gulp.task('styles', () => {
   return gulp.src([
     src.styles + "**/*.scss",
@@ -92,9 +94,6 @@ gulp.task('styles', () => {
       browsers: ['last 2 versions']
     }))
     .pipe($.minifyCss())
-    .pipe($.uncss({
-      html: [src.html + '**/*.html']
-    }))
     .pipe($.concat('main.css'))
     .pipe($.sourcemaps.write())
     .pipe($.size({ title: 'styles' }))

@@ -1,0 +1,52 @@
+First install git if it's not already
+  sudo apt-get install git
+
+Clone the repo off of github and then change to the pages branch
+  git clone https://github.com/JoeTheAverage/IdealClub.git
+  git checkout gh-pages
+
+All of the site files should now be
+
+Now run this to install ruby-install
+  wget -O ruby-install-0.6.0.tar.gz https://github.com/postmodern/ruby-install/archive/v0.6.0.tar.gz
+  tar -xzvf ruby-install-0.6.0.tar.gz
+  cd ruby-install-0.6.0/
+  sudo make install
+
+Next install ruby
+  sudo ruby-install ruby
+
+Wait 10 minutes whilst shitloads of text passes before you. 
+Maybe make a cup of tea or practice your scales or something this bit takes ages to run.
+
+Next install chruby which will let us use what we've just installed
+  wget -O chruby-0.3.9.tar.gz https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
+  tar -xzvf chruby-0.3.9.tar.gz
+  cd chruby-0.3.9/
+  sudo make install
+
+Open your bash rc file
+  nano ~/.bashrc
+
+And copy this in at the bottom:
+  source /usr/local/share/chruby/chruby.sh
+
+Close the terminal and open a new one. In the new terminal run:
+  chruby
+
+You should hopefully get something like 'ruby-2.3.0' out. Now run:
+  chruby ruby-2.3.0
+
+and
+  gem install bundler
+
+Very almost there. Now we actually install the program we want to run! Run:
+   bundle install
+
+Finally run the following:
+   jekyll serve
+
+And navigate to localhost:4000 in a browser.
+
+
+If any of the above fails to work for whatever reason, good luck!

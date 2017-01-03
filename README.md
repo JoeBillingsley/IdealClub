@@ -1,5 +1,5 @@
 # IdealClub
-The website and blog for the band IdealClub.
+The first attempt at a website for the IdealClub band. Rebuilt with Hugo and an improved build system and was simpler to create a new repo than replace the old one.
 
 ## Building from a clean install
 The website uses the gulp build tool so you'll first need to install Node.js and npm (Node Package Manager).
